@@ -84,6 +84,9 @@ class CastlevaniaPyBoyEnv(PyBoyEnv):
         }
 
     def _calculate_reward(self):
+        if self._game_over():
+            return 0
+
         reward = 0
 
         # Score

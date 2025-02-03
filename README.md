@@ -45,5 +45,5 @@ Trained model checkpoints can be found in the `models` directory.
 
 ## Tensorboard
 ```bash
-tensorboard --logdir tensorlogs
+tensorboard --logdir logs/castlevania_tensorlog
 ```

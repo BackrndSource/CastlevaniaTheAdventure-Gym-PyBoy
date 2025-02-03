@@ -3,7 +3,6 @@ PyBoy
 *.gb.ram
 *.gb.state
 
-*_tensorlog
 tmp
 
 .env

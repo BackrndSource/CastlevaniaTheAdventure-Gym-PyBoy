@@ -34,11 +34,8 @@ if __name__ == "__main__":
         # "gae_lambda": 0.98,
     }
 
-    tensorlog_dir = "tensorlogs/"
-    os.makedirs(tensorlog_dir, exist_ok=True)
-
-    # logs_dir = "logs/"
-    # os.makedirs(logs_dir, exist_ok=True)
+    logs_dir = "logs/"
+    os.makedirs(logs_dir, exist_ok=True)
 
     save_path = "models/"
     os.makedirs(save_path, exist_ok=True)
@@ -83,16 +80,14 @@ if __name__ == "__main__":
 
     callbacks = CallbackList([checkpoint_callback])
 
-    model = PPO(
-        "MultiInputPolicy", env, verbose=1, tensorboard_log=f"{tensorlog_dir}{model_name}_tensorlog", **hyperparams
-    )
+    model = PPO("MultiInputPolicy", env, verbose=1, tensorboard_log=f"{logs_dir}{model_name}_tensorlog", **hyperparams)
     # print(model.policy)
 
     # model = PPO.load(
     #     load_model,
     #     env,
     #     verbose=1,
-    #     tensorboard_log=f"{tensorlog_dir}{model_name}_tensorlog",
+    #     tensorboard_log=f"{logs_dir}{model_name}_tensorlog",
     #     print_system_info=True,
     #     **hyperparams,
     # )

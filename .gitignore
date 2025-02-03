@@ -1,0 +1,16 @@
+PyBoy
+*.gb
+*.gb.ram
+*.gb.state
+
+*_tensorlog
+tmp
+
+.env
+.vscode
+
+.DS_Store
+
+states
+
+__pycache__

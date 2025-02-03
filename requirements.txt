@@ -1,0 +1,11 @@
+stable-baselines3
+tqdm 
+rich
+tensorboard
+pyboy
+pillow
+gymnasium
+numpy
+scikit-image
+moviepy
+imageio
